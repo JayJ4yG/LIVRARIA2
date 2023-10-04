@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@100&display=swap" rel="stylesheet">
+    <title>Livraria Online</title>
+</head>
+<header>
+<body class="bg">
+    
+    <center><h1> Bem-vindo(a) a Livraria Doce Verão</h1>
+    <p>Insira o valor total da sua compra: </p>
+    <input type="number" id="valorCompra" placeholder="Insira o valor em R$">
+    <button onclick="calcularDesconto()">Calcular Desconto</button>
+    <p>Desconto aplicado: <span id="desconto"></span></p>
+    </center> </header>
+    <script>
+        function calcularDesconto()  {
+            const valorCompra = parseFloat (document.getElementById('valorCompra').value)
+
+            let desconto = 0;
+
+            if (valorCompra > 200) {
+                descontro = 0.2; // 20%
+            } else if (valorCompra > 100){
+                desconto = 0.1; // 10%
+            }
+        const valorDesconto = valorCompra * desconto;
+        document.getElementById('desconto').textContent = `R$ ${valorDesconto.toFixed(2)}`;
+        }
+        
+    </script> 
+    <ul class="produtos">
+
+        <li>
+           <h2> O Amor não é Óbvio</h2>
+          <img src="amor.jpg">
+          <p class="produto-descricao"> </p>
+         <h2 class="preco-produto">R$51,65</h2>
+        
+         </li>
+         <li>
+            <h2> Delilah Green não está nem Ai</h2>
+           <img src="delilah.jpg">
+           <p class="produto-descricao">  </p>
+          <h2 class="preco-produto">R$31,00</h2>
+        
+          </li>
+          <li>
+             <h2> Eu beijei Sharah Weller</h2>
+            <img src="sarah.jpg">
+            <p class="produto-descricao"> </p>
+           <h2 class="preco-produto">R$55,00</h2>
+           <li>
+           <h2> A jogada do amor</h2>
+            <img src="jogada.jpg">
+            <p class="produto-descricao"> </p>
+           <h2 class="preco-produto">R$57,00</h2>
+        </li>
+        <li>
+            <h2> Tempestade de Verão</h2>
+             <img src="tempestade.jpg">
+             <p class="produto-descricao"> </p>
+            <h2 class="preco-produto">R$45,00</h2>
+         </li>
+         <li>
+            <h2> Um milhão de finais Felizes</h2>
+             <img src="ummilho.jpg">
+             <p class="produto-descricao"> </p>
+            <h2 class="preco-produto">R$44,00</h2>
+         </li>
+        <center> <form class="uiui">
+            Defina seu nível de satisfação<br>
+            pouco satisfeito
+            <input type="range" name="satisfacao" min="0" max="10">
+            muito satisfeito
+       </form></center>
+         <center><input type="submit" value="COMPRAR" class="enviar"></center>
+          </html>
+           </li> </ul>
+           <footer>
+            <img src="ima.png" alt="AA" class="oo">
+            <p class="copyright">&copy; Doce Verão - 2023</p>
+          </footer>
+   
+          
+</body>
+</html>
